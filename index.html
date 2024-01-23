@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="converter-box">
+    <h2>Conversor de Moeda</h2>
+    <p id="subtexto">Moeda para BRL</p>
+    <label for="valor" class="h2">Valor:</label>
+    <input type="number" id="valor" placeholder="Digite o valor">
+
+    <label for="moeda" class="h2">Moeda:</label>
+    <select id="moeda">
+        <option value="USD-BRL">Dólar Americano (USD)</option>
+        <option value="EUR-BRL">Euro (EUR)</option>
+        <option value="BTC-BRL">Bitcoin (BTC)</option>
+        <!-- Adicione outras opções conforme necessário -->
+    </select>
+
+    <button onclick="converterMoeda()">Converter</button>
+    <p id="resultado"></p>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
